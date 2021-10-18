@@ -1,0 +1,1453 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+$colorGreen: #83dc36;
+$colorGrey: #323232;
+$colorGreyLight: #7c7b7b;
+
+a, a:link, a:visited {
+    text-decoration: none;
+    outline: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-fluid {
+    padding: 0px;
+}
+
+header {
+    .header-top {
+        background-image: url('../images/background-header-top.png');
+        background-repeat: repeat-x;
+        .header-top-info {
+
+            .slogan {
+                
+               .slogan-sentence {
+                   color: white;
+                   padding: 7px 0px;
+                   text-transform: capitalize;
+               }
+            }
+
+            .social-icon {
+                padding: 7px 0px 7px 128px;
+                
+                .fa-twitter, .fa-wifi, .fa-facebook, .fa-skype, .fa-youtube, .fa-google {
+                    color: $colorGreen;
+                    margin: 0px 8px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .header-content {
+        .header-content-info {
+            .logo {
+                .logo-image {
+
+                }
+
+                .logo-tagline {
+                    margin-top: -20px;
+                    margin-left: 10px;
+                    .tagline {
+                        text-transform: uppercase;
+                        word-spacing: -11px;
+                        letter-spacing: 10px;
+                        font-size: 20px;
+                        line-height: 1.3em;
+                    }
+                }
+            }
+
+            .search {
+                
+                margin-top: 35px;
+                .col-md-10 {
+                    padding: 0px;
+                    .search-text {
+                        border: 1px solid $colorGreen;
+                        border-radius: 30px 0px 0px 30px;
+                        height: 50px;
+
+                        .text {
+                            padding-top: 12px;
+                            padding-left: 19px;
+                            #input-text {
+                                border: none;
+                                width: 411  px;
+                                &:focus {
+                                    outline: none;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .col-md-2, .col-sm-2, .col-lg-2 {
+                    padding: 0px;
+                    .search-icon {
+                        background-color: $colorGreen;
+                        border: 1px solid $colorGreen;
+                        border-radius: 0px 30px 30px 0px;
+                        height: 50px;
+
+                        .glass-icon {
+                            padding-top: 10px;
+                            padding-lefT: 31px;
+                            .fa-search {
+                                cursor: pointer;
+                            }
+                            
+                        }
+                    }
+                }    
+               
+            }
+
+            .col-md-3, .col-sm-3, .col-lg-3 {
+                padding-left: 10px;
+                padding-right: 10px;
+                .contact-info {
+                    padding-left: -12px;
+                    margin-top: 33px;
+                    ul li {
+                        .fa-phone, .fa-envelope {
+                            color: $colorGreen;
+                        }
+                        a {
+                            color: $colorGrey;
+                            font-size: 14px;
+                        }
+                        .hotline-text, .email-text {
+                            color: $colorGrey;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+
+            
+        }
+    }
+
+    .header-menu-mobile {
+        display: none;
+    }
+
+    .header-menu-tablet {
+        display: none;
+    }
+
+    .header-menu {
+        margin-top: 15px;
+        .product-list {
+            .product-list-title {
+                background-color: $colorGreen;
+                padding: 7px 0px 7px 15px;
+                border-radius: 6px 6px 0px 0px;
+                .list-icon {
+                    .fa-bars {
+                        color: white;
+                        cursor: pointer;
+                    }
+                }
+
+                .title {
+                    color: white;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-size: 16px;
+                    margin-left: -17px;
+                }
+            }
+
+            .product {
+                border: 1px solid white;
+                border-radius: 0px 0px 6px 6px;
+                height: 385px;
+                background-color: white;
+                position: absolute;
+                z-index: 9999;
+                ul {
+                    padding-right: 7px;
+                    li {
+                    padding: 10px 0px;
+                    margin-left: -24px;
+                    border-bottom: 1px dotted $colorGrey;
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                        a {
+                            color: $colorGrey;
+                            font-size: 14px;
+                            text-transform: uppercase;
+                            &:hover {
+                                color: $colorGreen;
+                                transition: 0.3s;
+                            }   
+                        }
+                    }
+                    
+                }
+
+                
+            }
+        }
+
+        .menu-mobile {
+            display: none;
+        }
+
+        .menu-list {
+            margin-top: -10px;
+            margin-left: -48px;
+            ul li {
+                float: left;
+                &:hover {
+                    .sub-menu-product, .sub-menu-project {
+                        display: block;
+                        transition: 0.3s;
+                    }
+                }
+                a {
+                    padding: 10px 18px;
+                    color: $colorGrey;
+                    text-transform: uppercase;
+                    &:hover {
+                        color: $colorGreen;
+                        transition: 0.3s;
+                    }
+                }
+                .sub-menu-product {
+                    position: absolute;
+                    z-index: 9999;
+                    top: 35px;
+                    left: 248px;
+                    width: 229px;
+                    height: 279px;
+                    background-color: white;
+                    border: 1px solid white;
+                    border-radius: 0px 0px 6px 6px;
+                    display: none;
+                    li {
+                        float: none;
+                        padding: 10px 0px;
+                        margin-left: -24px;
+                        width: 197px;
+                        overflow: hidden;
+                        border-bottom: 1px $colorGrey dotted;
+                        &:last-child {
+                            border-bottom: none;
+                        }
+                        &:hover {
+                            .post-menu {
+                                display: block;
+                            }
+                        }
+                       
+                        a { 
+                           white-space: nowrap;
+                           line-height: 34px;
+                           padding-left: 0px;   
+                        }
+                        .post-menu {
+                            position: absolute;
+                            z-index: 9999;
+                            left: 218px;
+                            top: 109px;
+                            width: 252px;
+                            background-color: white;
+                            border: 1px solid white;
+                            border-radius: 0px 0px 6px 6px;
+                            display: none;
+                            li {
+                                overflow: hidden; 
+                                width: 218px;
+                                a {
+                                   white-space: nowrap;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .sub-menu-project {
+                    position: absolute;
+                    z-index: 9999;
+                    top: 35px;
+                    left: 364px;
+                    width: 229px;
+                    height: 279px;
+                    background-color: white;
+                    border: 1px solid white;
+                    border-radius: 0px 0px 6px 6px;
+                    display: none;
+                    li {
+                        float: none;
+                        padding: 10px 0px;
+                        margin-left: -24px;
+                        width: 197px;
+                        overflow: hidden;
+                        border-bottom: 1px $colorGrey dotted;
+                        &:last-child {
+                            border-bottom: none;
+                        }
+                       
+                        a { 
+                           white-space: nowrap;
+                           line-height: 34px;
+                           padding-left: 0px;   
+                        }
+                    }
+                }
+            }
+        }
+
+        .header-menu-background {
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 419px;
+            }
+        }
+    }
+}
+
+main {
+    .customer-interaction {
+        .col-md-3 ,.col-sm-3, .col-lg-3 {
+            padding: 0px;
+            .time {
+                border-right: 1px solid lightgray;
+                border-bottom: 1px solid lightgray;
+                border-left: 1px solid lightgray;
+                padding: 20px 0px;
+                .time-content, .shipping-content {
+                    .time-icon, .shipping-icon {
+                        text-align: center;
+                        .fa-clock-o, .fa-truck {
+                            color: $colorGreen; 
+                            font-size: 69px;
+                        }
+                    }
+    
+                    .time-title, .shipping-title {
+                        margin-top: 9px;
+                        .time-title-sentence, .shipping-title-sentence {
+                            color: $colorGrey;
+                            text-transform: uppercase;
+                            text-align: center;
+                            font-weight: bold;
+                        }
+                    }
+    
+                    .time-frame, .shipping-frame {
+                        margin-top: 5px;
+                        .time-frame-sentence, .time-frame-sentence {
+                            color: $colorGrey;
+                            text-align: center;
+                            font-size: 14px;
+                            font-style: italic;;
+                        }
+                    }
+    
+                }
+            }
+
+            .shipping, .exchange, .work {
+                border-right: 1px solid lightgray;
+                border-bottom: 1px solid lightgray;
+                padding: 20px 0px;
+                .shipping-content, .exchange-content, .work-content {
+                    .shipping-icon, .exchange-icon, .work-icon {
+                        text-align: center;
+                        .fa-truck, .fa-recycle, .fa-comments-o {
+                            color: $colorGreen; 
+                            font-size: 69px;
+                        }
+                    }
+    
+                    .shipping-title, .exchange-title, .work-title {
+                        margin-top: 9px;
+                        .shipping-title-sentence, .exchange-title-sentence, .work-title-sentence {
+                            color: $colorGrey;
+                            text-transform: uppercase;
+                            text-align: center;
+                            font-weight: bold;
+                        }
+                    }
+    
+                    .shipping-frame, .exchange-frame, .work-frame {
+                        margin-top: 5px;
+                        .time-frame-sentence, .exchange-frame-sentence, .work-frame-sentence {
+                            color: $colorGrey;
+                            text-align: center;
+                            font-size: 14px;
+                            font-style: italic;;
+                        }
+                    }
+    
+                }
+            }
+        }
+        
+    }
+
+    .main-content {
+        margin-top: 22px;
+        .col-md-3 ,.col-sm-3 ,.col-lg-3 {
+            padding: 0px;
+            .product-sidebar {
+                .product-ad {
+                   position: relative;
+                    .product-ad-image {
+                        background-color: #eae8e9;
+                        img {
+                            object-fit: cover;
+                            width:100%;
+                            height: 325px;
+                        }
+                    }
+                
+                    .product-ad-content {
+                        background-color: black;
+                        opacity: 0.5;
+                        position: absolute;
+                        z-index: 99;
+                        top: 265px;
+                        width: 285px;
+        
+                        .ad-content {
+                            .ad-content-text1, .ad-content-text2{
+                                text-transform: uppercase;
+                                color: white;
+                                font-weight: bold;
+                                text-align: center;
+                                font-size: 20px;
+                                cursor: pointer;
+                            }
+                        }
+                            
+                    }
+    
+                    .sale-icon {
+                        position: absolute;
+                        z-index: 99;
+                        top: 0px;
+                        right: 0px;
+                        margin-left: -128px;
+                        .sale-icon-image {
+                            float: right;
+                            img {
+                                object-fit: cover;
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+                    }
+                }
+    
+                .product-hot-list {
+                    margin-top: 23px;
+                    padding: 0px 5px;
+                    border: 1px solid lightgray;
+                    box-shadow: 0px 5px 5px -2px lightgray;
+                    .prodict-hot-list-title {
+                        .hot-list-title {
+                            border-bottom: 1px solid lightgray;
+                            margin-top: 6px;
+                            ul {
+                                margin-bottom: 5px;
+                                padding-left: 31px;
+                                li {
+                                    list-style-type: disc;
+                                    color: $colorGreen;
+                                    padding: 7px 0px;
+                                    
+                                    a {
+                                        color: $colorGreyLight;
+                                        text-transform: uppercase;
+                                        font-weight: bold;
+                                        padding-left: 7px;
+                                        font-size: 16px;
+                                        &:hover {
+                                            color: $colorGreen;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+    
+                    .hot-list {
+                        margin-top: 10px;
+                        padding: 0px 15px;
+                        border-bottom: 1px solid lightgray;
+                        &:last-child {
+                            border-bottom: none;
+                        }
+                        .col-md-4, .col-sm-4, .col-lg-4 {
+                            padding: 0px;
+                            .hot-product-image {
+                                margin-left: 18px;
+                                img {
+                                    object-fit: cover;
+                                    width: 100%;
+                                    height: 120px;
+                                }
+                            }
+                        }
+                        
+    
+                        .hot-product-description {
+                            .description-content {
+                                a {
+                                    color: $colorGreyLight;
+                                    font-size: 15px;
+                                    text-transform: capitalize;
+                                    font-weight: bold;
+                                    &:hover {
+                                        color: $colorGreen;
+                                    }
+                                }
+                            }
+    
+                            .hot-product-button {
+                                margin-top: 8px;
+                                .btn-green {
+                                    background-color: $colorGreen;
+                                    color: white;
+                                    font-size: 12px;
+                                    text-transform: uppercase;
+                                    border: 1px solid $colorGreen;
+                                    border-radius: 8px;
+                                    &:focus {
+                                        outline: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+    
+                .product-discount-list {
+                    margin-top: 23px;
+                    padding: 0px 5px;
+                    border: 1px solid lightgray;
+                    box-shadow: 0px 5px 5px -2px lightgray;
+                    .prodict-discount-list-title {
+                        .discount-list-title {
+                            border-bottom: 1px solid lightgray;
+                            margin-top: 6px;
+                            ul {
+                                margin-bottom: 5px;
+                                padding-left: 31px;
+                                li {
+                                    list-style-type: disc;
+                                    color: $colorGreen;
+                                    padding: 7px 0px;
+                                    
+                                    a {
+                                        color: $colorGreyLight;
+                                        text-transform: uppercase;
+                                        font-weight: bold;
+                                        padding-left: 7px;
+                                        font-size: 16px;
+                                        &:hover {
+                                            color: $colorGreen;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+    
+                    .discount-list {
+                        margin-top: 10px;
+                        padding: 0px 15px;
+                        border-bottom: 1px solid lightgray;
+                        .col-md-4, .col-sm-4, .col-lg-4 {
+                            padding: 0px;
+                            .discount-product-image {
+                                margin-left: 18px;
+                                img {
+                                    object-fit: cover;
+                                    width: 100%;
+                                    height: 120px;
+                                }
+                            }
+                        }
+                        
+    
+                        .discount-product-description {
+                            .description-content-discount {
+                                a {
+                                    color: $colorGreyLight;
+                                    font-size: 15px;
+                                    text-transform: capitalize;
+                                    font-weight: bold;
+                                    &:hover {
+                                        color: $colorGreen;
+                                    }
+                                }   
+                            }
+    
+                            .discount-product-button {
+                                margin-top: 8px;
+                                .btn-green-discount {
+                                    background-color: $colorGreen;
+                                    color: white;
+                                    font-size: 12px;
+                                    text-transform: uppercase;
+                                    border: 1px solid $colorGreen;
+                                    border-radius: 8px;
+                                    &:focus {
+                                        outline: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+    
+                .news {
+                    margin-top: 23px;
+                    padding: 0px 5px;
+                    border: 1px solid lightgray;
+                    box-shadow: 0px 5px 5px -2px lightgray;
+                    .news-title {
+                        .title {
+                            border-bottom: 1px solid lightgray;
+                            margin-top: 6px;
+                            ul {
+                                margin-bottom: 5px;
+                                padding-left: 31px;
+                                li {
+                                    list-style-type: disc;
+                                    color: $colorGreen;
+                                    padding: 7px 0px;
+                                    
+                                    a {
+                                        color: $colorGreyLight;
+                                        text-transform: uppercase;
+                                        font-weight: bold;
+                                        padding-left: 7px;
+                                        font-size: 16px;
+                                        &:hover {
+                                            color: $colorGreen;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+    
+                    .news-list {
+                        margin-top: 10px;
+                        padding: 0px 15px 15px 15px;
+                        border-bottom: 1px solid lightgray;
+                        &:last-child {
+                            border-bottom: none;
+                        }
+                        .col-md-4, .col-sm-4, .col-lg-4 {
+                            padding: 0px;
+                            .news-image {
+                                margin-left: 18px;
+                                img {
+                                    object-fit: cover;
+                                    width: 100%;
+                                    height: 53px;
+                                }
+                            }
+                        }
+                        
+    
+                        .news-description {
+                            .news-content {
+                                a {
+                                    color: $colorGreyLight;
+                                    font-size: 13px;
+                                    text-transform: capitalize;
+                                    font-weight: bold;
+                                    &:hover {
+                                        color: $colorGreen;
+                                    }
+                                }  
+                            }
+                        }
+                    }
+                }
+    
+            }    
+    
+               
+            
+    
+        }
+    
+        .col-md-9, .col-sm-9, .col-lg-9 {
+            padding: 0px 0px 0px 19px;
+            .product-main {
+                .product-list {
+                    border: 1px solid lightgray;
+                    box-shadow: 0px 5px 5px -2px lightgray; 
+                    .product-list-thread {
+                        padding-bottom: 18px;
+                        padding-top: 10px;
+                        border-bottom: 1px solid lightgray;
+                        .thread {
+                            ul {
+                                margin-left: -22px;
+                                li {
+                                    float: left;
+                                    
+                                    a {
+                                        text-transform: uppercase;
+                                        color: $colorGrey;
+                                        padding: 15px;
+                                        font-weight: bold;
+                                        &:hover {
+                                            color: white;
+                                            background-color: $colorGreen;
+                                        }
+                                        
+                                    }
+                                }
+                            }
+                        } 
+                        .product-list-button {
+                            margin-left: 38px;
+                            margin-top: 4px;
+                            .btn-group {
+                                padding: 10px;
+                                .btn-left, .btn-right {
+                                    border: 1px solid lightgray;
+                                    margin-right: 6px;
+                                    padding: 1px 4px;
+                                    font-size: 12px;
+    
+                                }
+                            }
+                            
+                        } 
+                    }
+    
+                    .product-items {
+                        padding: 18px 27px;
+                        .item {
+                            padding-bottom: 13px;
+                            &:hover {
+                                border: 1px solid lightgray;
+                                box-shadow: 2px 0px 5px -2px lightgray;
+                              
+                            }
+                            
+                            .item-image {
+                                padding: 10px;
+                                position: relative;
+                                .image {
+                                    a {
+                                        
+                                        img {
+                                            object-fit: cover;
+                                            width: 100%;
+                                            height: 224px;
+                                            position: relative;
+                                        }
+                                    }
+                                }   
+                            }
+
+                            .item-new-tag {
+                                padding: 0px 25px;
+                                position: absolute;
+                                z-index: 99;
+                                top: 10px;
+                                width: 100%;
+                                .new-text {
+                                    background-color: $colorGreen;
+                                    color: white;
+                                    text-align: center;
+                                    text-transform: uppercase;
+                                }
+                            }
+    
+                            
+
+                            .item-description {
+                                text-align: center;
+                                .item-name {
+                                    margin: 5px 0px 10px 0px;
+                                    .name {
+                                        padding: 0px 49px;
+                                        a {
+                                            text-transform: uppercase;
+                                            color: $colorGreen;
+                                            font-weight: bold;
+                                            font-size: 14px;
+                                            &:hover {
+                                                color: green;
+                                            }
+                                        }
+                                        
+                                    }
+                                }
+
+                                .item-code {
+                                    padding: 0px 49px;
+                                    margin-bottom: 19px;
+                                    .code {
+                                        text-transform: uppercase;
+                                        color: $colorGreyLight;
+                                        font-weight: bold;
+                                        font-size: 14px;
+                                    }
+                                }
+
+                                .item-button {
+                                    padding: 0px 53px;
+                                    .btn-item {
+                                        text-transform: uppercase;
+                                        color: $colorGreen;
+                                        font-size: 13px;
+                                        padding: 5px 20px;
+                                        border: 1px solid $colorGreen;
+                                        border-radius: 20px;
+                                        background-color: white;
+                                        &:hover {
+                                            color: white;
+                                            background-color: $colorGreen;
+                                        }
+                                        &:focus {
+                                            outline: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    } 
+                }
+
+                .product-for-sale {
+                    border-left: 1px solid lightgray;
+                    border-bottom: 1px solid lightgray;
+                    border-right: 1px solid lightgray;
+                    box-shadow: 0px 5px 5px -2px lightgray; 
+                    margin-top: 20px;
+                    .product-sale-thread {
+                        padding-bottom: 18px;
+                        padding-top: 10px;
+                        border-bottom: 1px solid lightgray;
+                        .thread-sale {
+                            padding-left: 18px;
+                            margin-top: 10px;
+                            a {
+                                text-transform: uppercase;
+                                color: $colorGreen;
+                                padding: 15px;
+                                font-weight: bold;
+                                &:hover {
+                                    color: green;
+                                }
+                                
+                            }   
+    
+                        } 
+                        .product-sale-button {
+                            margin-left: 38px;
+                            margin-top: 4px;
+                            .btn-group {
+                                padding: 10px;
+                                .btn-left, .btn-right {
+                                    border: 1px solid lightgray;
+                                    margin-right: 6px;
+                                    padding: 1px 4px;
+                                    font-size: 12px;
+    
+                                }
+                            }
+                            
+                        } 
+                    }
+    
+                    .product-sale-items {
+                        padding: 18px 27px;
+                        margin-top: 20px;
+                        .item {
+                            padding-bottom: 13px;
+                            &:hover {
+                                border: 1px solid lightgray;
+                                box-shadow: 2px 0px 5px -2px lightgray;
+                              
+                            }
+                            
+                            .item-image {
+                                padding: 10px;
+                                position: relative;
+                                .image {
+                                    img {
+                                        object-fit: cover;
+                                        width: 100%;
+                                        height: 224px;
+                                    }
+                                    
+                                }
+                            }
+                            
+                            .item-new-tag {
+                                padding: 0px 25px;
+                                position: absolute;
+                                z-index: 99;
+                                top: 10px;
+                                width: 100%;
+                                .new-text {
+                                    background-color: $colorGreen;
+                                    color: white;
+                                    text-align: center;
+                                    text-transform: uppercase;
+                                }
+                            }
+                            
+
+                            .item-description {
+                                text-align: center;
+                                .item-name {
+                                    margin: 5px 0px 10px 0px;
+                                    .name {
+                                        padding: 0px 49px;
+                                        a {
+                                            text-transform: uppercase;
+                                            color: $colorGreen;
+                                            font-weight: bold;
+                                            font-size: 14px;
+                                            &:hover {
+                                                color: green;
+                                            }
+                                        }
+                                        
+                                    }
+                                }
+
+                                .item-code {
+                                    padding: 0px 49px;
+                                    margin-bottom: 19px;
+                                    .code {
+                                        text-transform: uppercase;
+                                        color: $colorGreyLight;
+                                        font-weight: bold;
+                                        font-size: 14px;
+                                    }
+                                }
+
+                                .item-button {
+                                    padding: 0px 53px;
+                                    .btn-item {
+                                        text-transform: uppercase;
+                                        color: $colorGreen;
+                                        font-size: 13px;
+                                        padding: 5px 20px;
+                                        border: 1px solid $colorGreen;
+                                        border-radius: 20px;
+                                        background-color: white;
+                                        &:hover {
+                                            color: white;
+                                            background-color: $colorGreen;
+                                        }
+                                        &:focus {
+                                            outline: none;
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
+                    } 
+                }
+
+                .product-chandelier {
+                    border-left: 1px solid lightgray;
+                    border-bottom: 1px solid lightgray;
+                    border-right: 1px solid lightgray;
+                    box-shadow: 0px 5px 5px -2px lightgray; 
+                    margin-top: 20px;
+                    .product-chandelier-thread {
+                        padding-bottom: 18px;
+                        padding-top: 10px;
+                        border-bottom: 1px solid lightgray;
+                        .thread-chandelier {
+                            padding-left: 18px;
+                            margin-top: 10px;
+                            a {
+                                text-transform: uppercase;
+                                color: $colorGreen;
+                                padding: 15px;
+                                font-weight: bold;
+                                &:hover {
+                                    color: green;
+                                }
+                                
+                            }   
+    
+                        } 
+                        .product-chandelier-button {
+                            margin-left: -162px;
+                            margin-top: 4px;
+                            .btn-group {
+                                padding: 10px;
+                                .btn-left, .btn-right {
+                                    margin-right: 6px;
+                                    padding: 1px 4px;
+                                    font-size: 14px;
+                                    text-transform: capitalize;
+                                    font-weight: bold;
+                                    color: $colorGreyLight;
+                                    border: none;
+                                    &:hover {
+                                        color: white;
+                                        background-color: $colorGreen;
+                                    }
+                                    &:focus {
+                                        outline: none;
+                                    }
+    
+                                }
+                            }
+                            
+                        } 
+                    }
+    
+                    .product-chandelier-items {
+                        padding: 18px 27px;
+                        margin-top: 20px;
+                        .item {
+                            padding-bottom: 13px;
+                            &:hover {
+                                border: 1px solid lightgray;
+                                box-shadow: 2px 0px 5px -2px lightgray;
+                              
+                            }
+                            
+                            .item-image {
+                                padding: 10px;
+                                position: relative;
+                                .image {
+                                    img {
+                                        object-fit: cover;
+                                        width: 100%;
+                                        height: 224px;
+                                    }  
+                                }
+                            }
+
+                            .item-new-tag {
+                                padding: 0px 25px;
+                                position: absolute;
+                                z-index: 99;
+                                top: 10px;
+                                width: 100%;
+                                .new-text {
+                                    background-color: $colorGreen;
+                                    color: white;
+                                    text-align: center;
+                                    text-transform: uppercase;
+                                }
+                            }
+    
+                            
+
+                            .item-description {
+                                text-align: center;
+                                .item-name {
+                                    margin: 5px 0px 10px 0px;
+                                    .name {
+                                        padding: 0px 49px;
+                                        a {
+                                            text-transform: uppercase;
+                                            color: $colorGreen;
+                                            font-weight: bold;
+                                            font-size: 14px;
+                                            &:hover {
+                                                color: green;
+                                            }
+                                        }
+                                        
+                                    }
+                                }
+
+                                .item-code {
+                                    padding: 0px 49px;
+                                    margin-bottom: 19px;
+                                    .code {
+                                        text-transform: uppercase;
+                                        color: $colorGreyLight;
+                                        font-weight: bold;
+                                        font-size: 14px;
+                                    }
+                                }
+
+                                .item-button {
+                                    padding: 0px 53px;
+                                    .btn-item {
+                                        text-transform: uppercase;
+                                        color: $colorGreen;
+                                        font-size: 13px;
+                                        padding: 5px 20px;
+                                        border: 1px solid $colorGreen;
+                                        border-radius: 20px;
+                                        background-color: white;
+                                        &:hover {
+                                            color: white;
+                                            background-color: $colorGreen;
+                                        }
+                                        &:focus {
+                                            outline: none;
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
+                    } 
+                }
+
+                .product-ceiling {
+                    border-left: 1px solid lightgray;
+                    border-bottom: 1px solid lightgray;
+                    border-right: 1px solid lightgray;
+                    box-shadow: 0px 5px 5px -2px lightgray; 
+                    margin-top: 20px;
+                    .product-ceiling-thread {
+                        padding-bottom: 18px;
+                        padding-top: 10px;
+                        border-bottom: 1px solid lightgray;
+                        .thread-ceiling {
+                            padding-left: 18px;
+                            margin-top: 10px;
+                            a {
+                                text-transform: uppercase;
+                                color: $colorGreen;
+                                padding: 15px;
+                                font-weight: bold;
+                                &:hover {
+                                    color: green;
+                                }
+                                
+                            }   
+    
+                        } 
+                        .product-ceiling-button {
+                            margin-left: -360px;
+                            margin-top: 4px;
+                            .btn-group {
+                                padding: 10px;
+                                .btn-left, .btn-right {
+                                    margin-right: 6px;
+                                    padding: 1px 4px;
+                                    font-size: 14px;
+                                    text-transform: capitalize;
+                                    font-weight: bold;
+                                    color: $colorGreyLight;
+                                    border: none;
+                                    &:hover {
+                                        color: white;
+                                        background-color: $colorGreen;
+                                    }
+                                    &:focus {
+                                        outline: none;
+                                    }
+    
+                                }
+                            }
+                            
+                        } 
+                    }
+    
+                    .product-ceiling-items {
+                        padding: 18px 27px;
+                        margin-top: 20px;
+                        .item {
+                            padding-bottom: 13px;
+                            &:hover {
+                                border: 1px solid lightgray;
+                                box-shadow: 2px 0px 5px -2px lightgray;
+                              
+                            }
+                            
+                            .item-image {
+                                padding: 10px;
+                                position: relative;
+                                .image {
+                                    img {
+                                        object-fit: cover;
+                                        width: 100%;
+                                        height: 224px;
+                                    }  
+                                }   
+                            }
+
+                            .item-new-tag {
+                                padding: 0px 25px;
+                                position: absolute;
+                                z-index: 99;
+                                top: 10px;
+                                width: 100%;
+                                .new-text {
+                                    background-color: $colorGreen;
+                                    color: white;
+                                    text-align: center;
+                                    text-transform: uppercase;
+                                }
+                            }
+    
+                            
+
+                            .item-description {
+                                text-align: center;
+                                .item-name {
+                                    margin: 5px 0px 10px 0px;
+                                    .name {
+                                        padding: 0px 49px;
+                                        a {
+                                            text-transform: uppercase;
+                                            color: $colorGreen;
+                                            font-weight: bold;
+                                            font-size: 14px;
+                                            &:hover {
+                                                color: green;
+                                            }
+                                        }
+                                        
+                                    }
+                                }
+
+                                .item-code {
+                                    padding: 0px 49px;
+                                    margin-bottom: 19px;
+                                    .code {
+                                        text-transform: uppercase;
+                                        color: $colorGreyLight;
+                                        font-weight: bold;
+                                        font-size: 14px;
+                                    }
+                                }
+
+                                .item-button {
+                                    padding: 0px 53px;
+                                    .btn-item {
+                                        text-transform: uppercase;
+                                        color: $colorGreen;
+                                        font-size: 13px;
+                                        padding: 5px 20px;
+                                        border: 1px solid $colorGreen;
+                                        border-radius: 20px;
+                                        background-color: white;
+                                        &:hover {
+                                            color: white;
+                                            background-color: $colorGreen;
+                                        }
+                                        &:focus {
+                                            outline: none;
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
+                    } 
+                }
+
+
+                
+            }
+        }
+    }
+
+   
+    
+}
+
+footer {
+    .footer {
+        background-color: $colorGrey;
+        margin-top: 28px;
+        .footer-menu {
+           padding: 11px 150px;
+            .menu {
+                li {
+                    float: left;
+                    margin-right: 24px;
+                    &:hover {
+                        background-color: $colorGreen;
+                        border: 1px solid $colorGreen;
+                        border-radius: 8px;
+                        transition: 0.5s;
+                    }
+                    a {
+                        color: white;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        font-size: 13px;
+                        padding: 15px 24px;
+                        
+                    }
+                }
+            }
+        }
+
+        .footer-content {
+            margin-top: 46px;
+            .company-info {
+                color: white;
+                padding-right: 42px;
+                .company-name {
+                    a {
+                        color: white;
+                        text-transform: uppercase;
+                        font-size: 17px;
+                        font-weight: bold;
+                        &:hover {
+                            color: $colorGreen;
+                        }
+                    }
+                }
+
+                .company-info-content {
+                    margin-top: 20px;
+                    ul {
+                        padding-left: 0px;
+                        li {
+                            font-size: 13px;
+                            margin-top: 5px;
+                            margin-right: 3px;  
+                            
+                            address {
+                                display: inline;
+                                font-size: 13px;
+                                text-transform: capitalize;
+                            }
+                            a {
+                                color: white;
+                                font-size: 13px;
+                                &:hover {
+                                    color: $colorGreen;
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }
+
+            .company-policy {
+                .policy-title {
+                    color: white;
+                    text-transform: uppercase;
+                    font-size: 17px;
+                    font-weight: bold;
+                    
+                }
+
+                .company-policy-content {
+                    margin-top: 20px;
+                    margin-left: 18px;
+                    ul {
+                        padding-left: 0px;
+                        li {
+                            font-size: 13px;
+                            margin-top: 5px; 
+                            list-style-type: disc;
+                            color: white;
+                            a {
+                                color: white;
+                                font-size: 13px;
+                                text-transform: capitalize;
+                                &:hover {
+                                    color: $colorGreen;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .company-page {
+                margin-left: -24px;
+                .page-title {
+                    color: white;
+                    text-transform: uppercase;
+                    font-size: 17px;
+                    font-weight: bold;
+                }
+
+                .company-fanpage {
+                    margin-top: 24px;
+                    iframe {
+                        width: 300px;
+                        height: 200px;
+                    }
+                }
+            }
+
+            .contact-info {
+                margin-left: 94px;
+                
+                .contact-title {
+                    color: white;
+                    text-transform: uppercase;
+                    font-size: 17px;
+                    font-weight: bold;  
+                }
+
+                .contact-content {
+                    margin-top: 24px;
+                    .content {
+                        div {
+                            color: white;
+                            font-size: 13px;
+                            text-transform: capitalize;
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer-image {
+            background-image: url('../images/footer-image.png');
+            background-repeat: repeat-x;
+            height: 53px;
+            margin-top: 10px;
+        }
+
+        .footer-bottom {
+            background-color: black;
+            .footer-bottom-content {
+                padding: 10px 0px;
+                .footer-bottom-left {
+                    color: white;
+                    font-size: 13px;
+                    text-transform: capitalize;
+                }
+                .footer-bottom-right {
+                    color: white;
+                    margin-left: 158px;   
+                    font-size: 13px;
+                    text-transform: capitalize;
+
+                }
+            }
+            
+        }
+    }
+}
+
+
+
